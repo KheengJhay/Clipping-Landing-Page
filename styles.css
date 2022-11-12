@@ -1,0 +1,206 @@
+@import url('https://fonts.google.com/specimen/Bai+Jamjuree');
+* {
+	box-sizing: border-box;
+}
+:root {
+	--strongCyan: hsl(171, 66%, 44%);
+	--lightBlue: hsl(233, 100%, 69%);
+	--darkGrayishBlue: hsl(210, 10%, 33%);
+	--grayishBlue: hsl(201, 11%, 66%);
+}
+
+html {
+	font-size: 62.5%;
+	font-family: Bai Jamjuree, sans-serif;
+	text-align: center;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url(bg-header-desktop.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 0;
+}
+h1 {
+	font-size: 2.5rem;
+	line-height: 4rem;
+}
+p {
+	font-size: 1.7rem;
+	line-height: 3rem;
+	color: rgba(128, 128, 128, 0.603);
+	width: 85%;
+	margin-top: 0;
+}
+.download__ios {
+	background-color: var(--strongCyan);
+	border: none;
+	padding: 1.5rem;
+	border-radius: 40rem;
+	width: 20rem;
+	margin: 2rem 0 0 0;
+	color: white;
+	box-shadow: inset 0px -2px 4px 0px rgb(0 0 0 / 69%);
+}
+.download__mac {
+	background-color: var(--lightBlue);
+	border: none;
+	padding: 1.5rem;
+	border-radius: 40rem;
+	width: 20rem;
+	margin: 2rem 0 5rem 0;
+	color: white;
+	box-shadow: inset 0px -2px 4px 0px rgb(0 0 0 / 69%);
+}
+.computer,
+.devices {
+	width: 90%;
+	object-fit: cover;
+}
+.google {
+	margin: 14rem 0 0 0;
+}
+.ibm,
+.microsoft,
+.hp,
+.vector {
+	margin: 7rem 0 0 0;
+}
+footer {
+	background-color: var(--grayishBlue);
+	height: 90vh;
+	width: 100%;
+	margin: 10rem 0 0 0;
+}
+footer > img {
+	margin: 3rem 0 0 0;
+	width: 8rem;
+}
+footer > div {
+	margin: 5rem 0 0 0;
+	line-height: 4rem;
+	font-size: 1.5rem;
+	color: rgba(26, 25, 25, 0.767);
+    cursor: pointer;
+}
+footer > div.one > h3:active{
+    color: var(--strongCyan);
+}
+.socials {
+	margin: 2rem 0 0 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+	font-size: 4rem;
+}
+.socials > i:active{
+    color: var(--strongCyan);
+}
+section {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+section[data='3'] > div.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+section[data='4'] > div > div {
+	margin-top: 10rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+section[data='5'] > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (min-width: 1440px) {
+	section[data='2'] {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	section[data='2'] > p {
+		width: 60%;
+		text-align: center;
+	}
+	section[data='3'] {
+		margin: 5rem 0 0 0;
+		display: flex;
+		flex-direction: row;
+	}
+	section[data='3'] > div.info {
+		display: flex;
+		flex-direction: column;
+		justify-content: left;
+		align-items: flex-start;
+		margin: 0 0 0 3rem;
+	}
+	section[data='3'] > div.info > p {
+		margin: 0 0 0 5rem;
+		width: 50%;
+		text-align: left;
+	}
+	section[data='3'] > div.info > h1 {
+		margin: 4rem 0 0 5rem;
+	}
+	section[data='4'] > div {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-top: 10rem;
+	}
+	section[data='4'] > div > div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 20rem;
+	}
+	.devices {
+		width: 75%;
+	}
+	section[data='5'] > div {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	section[data='5'] > div > img {
+		margin: 10rem 3rem 0 3rem;
+	}
+	footer {
+		height: 20vh;
+		display: flex;
+	}
+	footer > img {
+		width: 10rem;
+		height: 10rem;
+		margin: 3rem 0 0 20rem;
+	}
+    footer > div.one{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        text-align: center;
+    }
+    footer > div.one > h3{
+        margin: 0 2rem 0 2rem;
+    }
+}
